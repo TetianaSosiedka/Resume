@@ -1,0 +1,24 @@
+:root {
+  --font-title: "Roboto", sans-serif;
+  --font-main: font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+    font-family: var(--font-main);
+    font-size: 400;
+}
+h1, h2, p{
+      margin-top: 0;
+  margin-bottom: 0;
+}
+/* -----------------------HEADER------------------------- */
+.header {
+  font-family: var(--font-title);
+  font-size: 700;
+}
+.portrait{
+    
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
