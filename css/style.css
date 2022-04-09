@@ -1,24 +1,101 @@
 :root {
-  --font-title: "Roboto", sans-serif;
-  --font-main: font-family: 'Source Sans Pro', sans-serif;
+    --font-title: "Roboto", sans-serif;
+    --font-main: font-family: 'Source Sans Pro', sans-serif;
+    --font-size: 14px;
+    --line-height: 1.2;
+    --letter-spacing: 0.03em;
 }
-body {
-    font-family: var(--font-main);
-    font-size: 400;
+body {    
+ font-family: var(--font-main);
+ font-weight: 400;
+}
+.container{
+    position: relative;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+img{
+    display: block;
+    border: none;
 }
 h1, h2, p{
-      margin-top: 0;
-  margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h1, h2{
+    text-transform: uppercase;
+    font-family: var(--font-title);
+    font-weight: 700;
+}
+h2{
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    line-height: 2;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 /* -----------------------HEADER------------------------- */
 .header {
-  font-family: var(--font-title);
-  font-size: 700;
+    display: flex;
+    position: absolute;
+    top: 35px;
+    width: 100%;
+    margin: 0 15px;
+    background-color: #ffffff;
+    border: solid 3px #000000;    
+    font-family: var(--font-title);
 }
 .portrait{
-    
+    border-right: solid 3px #000000;
 }
-h1{
+.personal-name{ 
+    font-size: 40px;
+    letter-spacing: 0.09em;
+    line-height: 90px;
+    margin: 0 auto;
+}
+/* -----------------------MAIN------------------------- */
+.personal-wrap{
+    display: flex;
+}
+/*personal details*/
+.personal-date{
+    width: 450px;
+    padding: 160px 15px 0 15px;  
+    background-color: rgb(228, 213, 215);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+}
+.personal-date-item{
+    margin-bottom: 15px;
+}
+.details-item{
+    margin-bottom: 10px;
+}
+.details-list span{
+    display: block;
     text-transform: uppercase;
-    text-align: center;
+    font-weight: 700;
+    font-family: var(--font-title);
+    font-size: 13px;
+}
+.details-list span::after{
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+/*personal informations*/
+.personal-inform{
+    padding: 160px 15px 0 15px;   
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+
 }
