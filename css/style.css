@@ -20,8 +20,8 @@ img{
     border: none;
 }
 h1, h2, p{
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
 }
 h1, h2{
     text-transform: uppercase;
@@ -62,16 +62,18 @@ ul{
 .personal-wrap{
     display: flex;
 }
-/*personal details*/
-.personal-date{
-    width: 450px;
-    padding: 160px 15px 0 15px;  
-    background-color: rgb(228, 213, 215);
+.section{
+    padding: 160px 20px 20px 20px;  
     font-size: var(--font-size);
     line-height: var(--line-height);
     letter-spacing: var(--letter-spacing);
 }
-.personal-date-item{
+/*personal details*/
+.personal-date{
+    width: 450px;    
+    background-color: rgb(228, 213, 215);    
+}
+.personal-details{
     margin-bottom: 15px;
 }
 .details-item{
@@ -84,18 +86,28 @@ ul{
     font-family: var(--font-title);
     font-size: 13px;
 }
-.details-list span::after{
-    content: "";
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: #000000;
+.details-languages, .details-skills{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.details-languages p, .details-skills p{
+    margin-right: 0;
+    font-size: 8px;    
+}
+.details-personalyty-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.details-personalyty-item{
+    flex-basis: 50%;
+}
+.details-personalyty-item span{
+    display: inline;
+    margin-right: 5px;
+    font-size: 10px;
 }
 /*personal informations*/
 .personal-inform{
-    padding: 160px 15px 0 15px;   
-    font-size: var(--font-size);
-    line-height: var(--line-height);
-    letter-spacing: var(--letter-spacing);
 
 }
