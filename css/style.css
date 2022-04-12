@@ -68,7 +68,7 @@ a:focus {
   margin: 0 auto;
 }
 /* -----------------------MAIN------------------------- */
-.personal-wrap {
+.wrap {
   display: flex;
 }
 .section {
@@ -119,20 +119,34 @@ a:focus {
   font-size: 10px;
 }
 /*personal informations*/
-.personal-inform {
+.inform {
   width: 100%;
 }
-.personal-inform-item {
+.inform-item {
   padding-bottom: 10px;
 }
-.personal-inform-item:not(:last-child) {
+.inform-item:not(:last-child) {
   border-bottom: 2px solid rgb(214, 181, 186);
 }
-.personal-inform-item:not(:first-child) {
+.inform-item:not(:first-child) {
   margin-bottom: 5px;
 }
-.personal-inform-item span {
+.inform-item span {
   margin-right: 5px;
   font-size: 10px;
   font-weight: bold;
+}
+.education-list span,
+.experience-list span,
+.work-list span {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-title);
+  font-size: 13px;
+}
+.education-item:not(:last-child),
+.experience-item:not(:last-child),
+.work-item:not(:last-child) {
+  margin-bottom: 10px;
 }
