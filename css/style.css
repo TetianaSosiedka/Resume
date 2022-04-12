@@ -195,3 +195,12 @@ a:focus {
 .work-item:not(:last-child) {
   margin-bottom: 10px;
 }
+.experience-task-list {
+  margin-top: 5px;
+}
+.experience-task-item span {
+  display: inline;
+  margin-right: 5px;
+  font-size: 10px;
+  font-weight: bold;
+}
