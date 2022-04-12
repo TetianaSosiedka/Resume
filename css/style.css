@@ -10,11 +10,29 @@ body {
   font-weight: 400;
 }
 .container {
-  position: relative;
-  max-width: 1200px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 img {
   display: block;
   border: none;
@@ -47,41 +65,71 @@ a:focus {
   color: #000000;
   text-decoration: none;
 }
+
 /* -----------------------HEADER------------------------- */
 .header {
   display: flex;
   position: absolute;
   top: 35px;
-  width: calc(100% - 30px);
+  width: calc(100% - 50px);
   margin: 0 15px;
   background-color: #ffffff;
   border: solid 3px #000000;
   font-family: var(--font-title);
 }
+@media screen and (min-width: 1200px) {
+  .header {
+    width: calc(100% - 45px);
+  }
+}
 .portrait {
   border-right: solid 3px #000000;
 }
 .personal-name {
-  font-size: 40px;
+  font-size: 18px;
   letter-spacing: 0.09em;
   line-height: 90px;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+  .personal-name {
+    font-size: 40px;
+  }
+}
+
 /* -----------------------MAIN------------------------- */
-.wrap {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .wrap {
+    display: flex;
+  }
 }
 .section {
-  padding: 160px 20px 20px 20px;
+  padding: 20px;
   font-size: var(--font-size);
   line-height: var(--line-height);
   letter-spacing: var(--letter-spacing);
 }
+@media screen and (max-width: 1199px) {
+  .section:first-child {
+    padding: 160px 20px 20px 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 160px 20px 20px 20px;
+  }
+}
+
 /*personal details*/
 .personal-date {
-  width: 300px;
   background-color: rgb(214, 181, 186);
 }
+@media screen and (min-width: 1200px) {
+  .personal-date {
+    width: 300px;
+  }
+}
+
 .personal-details {
   margin-bottom: 15px;
 }
@@ -119,9 +167,6 @@ a:focus {
   font-size: 10px;
 }
 /*personal informations*/
-.inform {
-  width: 100%;
-}
 .inform-item {
   padding-bottom: 10px;
 }
