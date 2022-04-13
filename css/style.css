@@ -6,6 +6,7 @@
   --letter-spacing: 0.03em;
 }
 body {
+  margin: 0;
   font-family: var(--font-main);
   font-weight: 400;
 }
@@ -126,7 +127,7 @@ a:focus {
 }
 @media screen and (min-width: 1200px) {
   .personal-date {
-    width: 300px;
+    min-width: 300px;
   }
 }
 
