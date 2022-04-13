@@ -11,6 +11,7 @@ body {
   font-weight: 400;
 }
 .container {
+  position: relative;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -72,16 +73,11 @@ a:focus {
   display: flex;
   position: absolute;
   top: 35px;
-  width: calc(100% - 50px);
+  width: calc(100% - 36px);
   margin: 0 15px;
   background-color: #ffffff;
   border: solid 3px #000000;
   font-family: var(--font-title);
-}
-@media screen and (min-width: 1200px) {
-  .header {
-    width: calc(100% - 45px);
-  }
 }
 .portrait {
   border-right: solid 3px #000000;
