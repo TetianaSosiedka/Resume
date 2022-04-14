@@ -133,6 +133,9 @@ a:focus {
 .details-item {
   margin-bottom: 10px;
 }
+.details-item a {
+  display: block;
+}
 .details-list span {
   display: block;
   text-transform: uppercase;
