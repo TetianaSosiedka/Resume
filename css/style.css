@@ -135,6 +135,7 @@ a:focus {
 }
 .details-item a {
   display: block;
+  margin-bottom: 2px;
 }
 .details-list span {
   display: block;
