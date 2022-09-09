@@ -169,6 +169,7 @@ a:focus {
 }
 /*personal informations*/
 .inform-item {
+  margin-top: 25px;
   padding-bottom: 10px;
 }
 .inform-item:not(:last-child) {
@@ -177,10 +178,12 @@ a:focus {
 .inform-item:not(:first-child) {
   margin-bottom: 5px;
 }
-.inform-item span {
+.inform-item a {
   margin-right: 5px;
-  font-size: 10px;
-  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-title);
+  font-size: 13px;
 }
 .education-list span,
 .experience-list span,
